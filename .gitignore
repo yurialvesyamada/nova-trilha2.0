@@ -1,0 +1,31 @@
+# Ignore editor/IDE specific files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Ignore Node.js specific files
+node_modules/
+npm-debug.log
+
+# Ignore Docker specific files
+**/.docker/
+
+# Ignore sensitive files
+backend/secrets/db_credentials.txt
+database/secrets/mysql_root_password.txt
+database/secrets/mysql_user_password.txt
+frontend/.env
+frontend/.env.production
+
+# Ignore build artifacts
+backend/vendor/
+frontend/build/
+database/data/
+
+# Ignore development server specific files
+backend/.htaccess
+frontend/public/.htaccess
+
+# Exclude docker-compose.yml
+docker-compose.yml
